@@ -16,12 +16,36 @@
 <body>
   <!-- TOP BANNER -->
 
-  <nav class="navbar navbar-light bg-light">
+  <!-- <nav class="navbar navbar-light bg-light" id="navbar">
     <span class="navbar-brand mb-0 h1">Max Kulicke</span>
     <span class="navbar-brand mb-0 h1">About</span>
     <span class="navbar-brand mb-0 h1">Portfolio</span>
     <span class="navbar-brand mb-0 h1">Music</span>
     <span class="navbar-brand mb-0 h1">Photography</span>
+  </nav> -->
+
+  <nav class="navbar navbar-light bg-light" id="navbar">
+    <a class="navbar-brand" href="#">Max Kulicke</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Portfolio</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Music</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Photography</a>
+        </li>
+      </ul>
+    </div>
   </nav>
 
   <div class="row">
@@ -30,9 +54,20 @@
 
       <div class="row" id="about">
         <div class="container">
+          <h2>About Me</h2>
           <div class="card">
             <div class="card-body">
-              About Me
+              <!-- <img src="images/max_on_box.jpg" class="img-fluid float-left" id="maxpic" alt="Max" height="337" width="244"> -->
+              <p>Bunch of bullshit text here..... Bunch of bullshit text here..... Bunch of bullshit text here.....
+                Bunch of bullshit text here..... Bunch of bullshit text here..... Bunch of bullshit text here.....
+                Bunch of bullshit text here..... Bunch of bullshit text here..... Bunch of bullshit text here.....
+                Bunch of bullshit text here..... Bunch of bullshit text here..... Bunch of bullshit text here.....
+                Bunch of bullshit text here..... Bunch of bullshit text here..... Bunch of bullshit text here.....
+                Bunch of bullshit text here..... Bunch of bullshit text here..... Bunch of bullshit text here.....
+              </p>
+              <button type="button" class="btn btn-secondary">Github</button>
+              <button type="button" class="btn btn-secondary">LinkedIn</button>
+              <button type="button" class="btn btn-secondary">Resume</button>
             </div>
           </div>
         </div>
@@ -40,9 +75,38 @@
 
       <div class="row" id="portfolio">
         <div class="container">
+          <h2>Portfolio</h2>
           <div class="card">
             <div class="card-body">
-              Portfolio
+              <div class="row">
+                <div class="col-sm-4">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Project</h5>
+                      <p class="card-text">Brief description of project</p>
+                      <a href="#" class="btn btn-primary">Link to deployed project</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Project</h5>
+                      <p class="card-text">Brief description of project</p>
+                      <a href="#" class="btn btn-primary">Link to deployed project</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Project</h5>
+                      <p class="card-text">Brief description of project</p>
+                      <a href="#" class="btn btn-primary">Link to deployed project</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -50,9 +114,9 @@
 
       <div class="row" id="music">
         <div class="container">
+          <h2>Music</h2>
           <div class="card">
             <div class="card-body">
-              Music
             </div>
           </div>
         </div>
@@ -60,9 +124,9 @@
 
       <div class="row" id="photography">
         <div class="container">
+          <h2>Photography</h2>
           <div class="card">
             <div class="card-body">
-              Photography
             </div>
           </div>
         </div>
