@@ -6,18 +6,27 @@ body {
 }
 
 #scrollbox {
-  max-height: 30rem;
+  max-height: 32rem;
   overflow-y: auto;
 }
 
 #navbar {
-  margin-bottom: 5rem;
+  margin-bottom: 4rem;
+}
+
+.nav-link {
+  /* justify right somehow */
 }
 
 .container {
   background-color: rgba(255, 255, 255, 0.5);
   padding: 1rem;
 }
+
+/* .rounded {
+  border-radius: .5rem!important
+} */
+
 
 #maxpic {
   margin-bottom: 1rem;
