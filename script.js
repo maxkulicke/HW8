@@ -65,7 +65,8 @@ $(document).ready(function () {
         case 'passwordCard':
           $('.passwordContent').fadeIn(300);
           break;
-        case 'tbd':
+        case 'homebuyerCard':
+          $('.homebuyerContent').fadeIn(300);
           break;
         default:
           console.log('error');
@@ -80,8 +81,9 @@ $(document).ready(function () {
         case 'passwordCard':
           $('.passwordContent').fadeOut(200);
           break;
-        case 'tbd':
-          break;
+          case 'homebuyerCard':
+            $('.homebuyerContent').fadeOut(200);
+            break;
         default:
           console.log('error');
           break;
