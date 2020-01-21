@@ -1,6 +1,8 @@
 $(document).ready(function () {
 
   $('.projectContent').hide();
+  $('#exampleModal').hide();
+
 
   $('.container').hover(
     function () {
@@ -8,19 +10,19 @@ $(document).ready(function () {
       // console.log(this.id);
       switch (this.id) {
         case 'about':
-          $(this).animate({backgroundColor : 'rgb(66, 19, 236)'}, 1000);
+          $(this).animate({ backgroundColor: 'rgb(66, 19, 236)' }, 1000);
           break;
         case 'portfolio':
-          $(this).animate({backgroundColor : 'rgb(66, 19, 236)'}, 1000);
+          $(this).animate({ backgroundColor: 'rgb(66, 19, 236)' }, 1000);
           break;
         case 'music':
-          $(this).animate({backgroundColor : 'rgb(66, 19, 236)'}, 1000);
+          $(this).animate({ backgroundColor: 'rgb(66, 19, 236)' }, 1000);
           break;
         case 'photography':
-          $(this).animate({backgroundColor : 'rgb(66, 19, 236)'}, 1000);
+          $(this).animate({ backgroundColor: 'rgb(66, 19, 236)' }, 1000);
           break;
         case 'contact':
-          $(this).animate({backgroundColor : 'rgb(66, 19, 236)'}, 1000);
+          $(this).animate({ backgroundColor: 'rgb(66, 19, 236)' }, 1000);
           break;
         default:
           console.log('error');
@@ -61,12 +63,15 @@ $(document).ready(function () {
       switch (this.id) {
         case 'plannerCard':
           $('.plannerContent').fadeIn(300);
+          $('#plannerImg').animate({ opacity: '0.1' }, 500);
           break;
         case 'passwordCard':
           $('.passwordContent').fadeIn(300);
+          $('#passwordImg').animate({ opacity: '0.1' }, 500);
           break;
         case 'homebuyerCard':
           $('.homebuyerContent').fadeIn(300);
+          $('#homebuyerImg').animate({ opacity: '0.1' }, 500);
           break;
         default:
           console.log('error');
@@ -77,13 +82,16 @@ $(document).ready(function () {
       switch (this.id) {
         case 'plannerCard':
           $('.plannerContent').fadeOut(200);
+          $('#plannerImg').animate({ opacity: '1.0' }, 500);
           break;
         case 'passwordCard':
           $('.passwordContent').fadeOut(200);
+          $('#passwordImg').animate({ opacity: '1.0' }, 500);
           break;
-          case 'homebuyerCard':
-            $('.homebuyerContent').fadeOut(200);
-            break;
+        case 'homebuyerCard':
+          $('.homebuyerContent').fadeOut(200);
+          $('#homebuyerImg').animate({ opacity: '1.0' }, 500);
+          break;
         default:
           console.log('error');
           break;

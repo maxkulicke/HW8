@@ -18,6 +18,18 @@ body {
   margin-bottom: 4rem;
 }
 
+.imgCard {
+  /* height: 600px;
+  width: 100vw; */
+  background: black;
+  overflow: hidden;
+}
+
+.portfolio-img {
+    object-fit: cover;
+    opacity: 1;
+}
+
 .nav-link {
   /* justify right somehow */
 }
