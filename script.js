@@ -8,19 +8,19 @@ $(document).ready(function () {
       // console.log(this.id);
       switch (this.id) {
         case 'about':
-          $(this).animate({backgroundColor : 'rgb(66, 19, 236)'}, 'slow');
+          $(this).animate({backgroundColor : 'rgb(66, 19, 236)'}, 1000);
           break;
         case 'portfolio':
-          $(this).animate({backgroundColor : 'rgb(66, 19, 236)'}, 'slow');
+          $(this).animate({backgroundColor : 'rgb(66, 19, 236)'}, 1000);
           break;
         case 'music':
-          $(this).animate({backgroundColor : 'rgb(66, 19, 236)'}, 'slow');
+          $(this).animate({backgroundColor : 'rgb(66, 19, 236)'}, 1000);
           break;
         case 'photography':
-          $(this).animate({backgroundColor : 'rgb(66, 19, 236)'}, 'slow');
+          $(this).animate({backgroundColor : 'rgb(66, 19, 236)'}, 1000);
           break;
         case 'contact':
-          $(this).animate({backgroundColor : 'rgb(66, 19, 236)'}, 'slow');
+          $(this).animate({backgroundColor : 'rgb(66, 19, 236)'}, 1000);
           break;
         default:
           console.log('error');
