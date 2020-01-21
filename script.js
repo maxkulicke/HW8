@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
   $('.projectContent').hide();
-  $('#exampleModal').hide();
+  $('.photoContent').hide();
 
 
   $('.container').hover(
@@ -91,6 +91,30 @@ $(document).ready(function () {
         case 'homebuyerCard':
           $('.homebuyerContent').fadeOut(200);
           $('#homebuyerImg').animate({ opacity: '1.0' }, 500);
+          break;
+        default:
+          console.log('error');
+          break;
+      }
+    }
+  );
+
+  $('#photoCard').hover(
+    function () {
+      // console.log(this.id);
+      switch (this.id) {
+        case 'photoCard':
+          $('.photoContent').fadeIn(300);
+          break;
+        default:
+          console.log('error');
+          break;
+      }
+    },
+    function () {
+      switch (this.id) {
+        case 'photoCard':
+          $('.photoContent').fadeOut(200);
           break;
         default:
           console.log('error');

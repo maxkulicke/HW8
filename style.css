@@ -30,6 +30,10 @@ body {
     opacity: 1;
 }
 
+#photoText {
+  color: white;
+}
+
 .nav-link {
   /* justify right somehow */
 }
