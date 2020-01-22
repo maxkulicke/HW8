@@ -3,30 +3,49 @@ $(document).ready(function () {
   $('.projectContent').hide();
   $('.photoContent').hide();
 
+  $('#maxName').click(function() {
+    $('.nav-link').removeClass('bold',);
+    $(this).addClass('bold');
+  })
+
   // navbar onclick purple to white
   $('.nav-link').click(function() {
-    console.log(this.id);
+    // console.log(this.id);
     switch (this.id) {
       case 'aboutNav':
+        $('.nav-link').removeClass('bold',);
+        $('#maxName').removeClass('bold',);
         $('.card').animate({ backgroundColor: 'rgb(233, 227, 255)'}, 200);
         $('#about').animate({ backgroundColor: 'rgb(255, 255, 255)' }, 200);
+        $(this).addClass('bold');
         break;
       case 'portfolioNav':
+        $('.nav-link').removeClass('bold');
+        $('#maxName').removeClass('bold',);
         $('.card').animate({ backgroundColor: 'rgb(233, 227, 255)'}, 200);
         $('#portfolio').animate({ backgroundColor: 'rgb(255, 255, 255)' }, 200);
-        // $('.imgCard').animate({ backgroundColor: 'rgb(255, 255, 255)' }, 200)
+        $(this).addClass('bold');
         break;
       case 'musicNav':
+        $('.nav-link').removeClass('bold');
+        $('#maxName').removeClass('bold',);
         $('.card').animate({ backgroundColor: 'rgb(233, 227, 255)'}, 200);
         $('#music').animate({ backgroundColor: 'rgb(255, 255, 255)' }, 200);
+        $(this).addClass('bold');
         break;
       case 'photographyNav':
+        $('.nav-link').removeClass('bold');
+        $('#maxName').removeClass('bold',);
         $('.card').animate({ backgroundColor: 'rgb(233, 227, 255)'}, 200);
         $('#photography').animate({ backgroundColor: 'rgb(255, 255, 255)' }, 200);
+        $(this).addClass('bold');
         break;
       case 'contactNav':
+        $('.nav-link').removeClass('bold');
+        $('#maxName').removeClass('bold',);
         $('.card').animate({ backgroundColor: 'rgb(233, 227, 255)'}, 200);
         $('#contact').animate({ backgroundColor: 'rgb(255, 255, 255)' }, 200);
+        $(this).addClass('bold');
         break;
       default:
         // console.log('error');

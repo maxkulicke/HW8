@@ -35,8 +35,12 @@ body {
   color: white;
 }
 
+.bold {
+font-weight: bold;
+}
+
 .nav-link {
-  /* justify right somehow */
+/* font-weight: bold; */
 }
 
 .container {
