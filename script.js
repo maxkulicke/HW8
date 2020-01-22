@@ -73,18 +73,23 @@ $(document).ready(function () {
       switch (this.id) {
         case 'about':
           animateToLilac(this);
+          clearBold();
           break;
         case 'portfolio':
           animateToLilac(this);
+          clearBold();
           break;
         case 'music':
           animateToLilac(this);
+          clearBold();
           break;
         case 'photography':
           animateToLilac(this);
+          clearBold();
           break;
         case 'contact':
           animateToLilac(this);
+          clearBold();
           break;
         default:
           break;
@@ -92,12 +97,16 @@ $(document).ready(function () {
     },
   );
 
-  const moveBold = (element) => {
+  const clearBold = () => {
     $('.nav-link').removeClass('bold');
     $('#maxName').removeClass('bold');
+  }
+
+  const moveBold = (element) => {
+    clearBold();
     $(element).addClass('bold');
   }
-  
+
   const animateToWhite = element => { $(element).animate({ backgroundColor: 'rgb(255, 255, 255)' }, 200); }
 
   const animateToLilac = element => { $(element).animate({ backgroundColor: 'rgb(233, 227, 255)' }, 200); }
