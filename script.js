@@ -47,18 +47,23 @@ $(document).ready(function () {
       switch (this.id) {
         case 'about':
           animateToWhite(this);
+          moveBold(`#${this.id}Nav`);
           break;
         case 'portfolio':
           animateToWhite(this);
+          moveBold(`#${this.id}Nav`);
           break;
         case 'music':
           animateToWhite(this);
+          moveBold(`#${this.id}Nav`);
           break;
         case 'photography':
           animateToWhite(this);
+          moveBold(`#${this.id}Nav`);
           break;
         case 'contact':
           animateToWhite(this);
+          moveBold(`#${this.id}Nav`);
           break;
         default:
           break;
@@ -92,6 +97,7 @@ $(document).ready(function () {
     $('#maxName').removeClass('bold');
     $(element).addClass('bold');
   }
+  
   const animateToWhite = element => { $(element).animate({ backgroundColor: 'rgb(255, 255, 255)' }, 200); }
 
   const animateToLilac = element => { $(element).animate({ backgroundColor: 'rgb(233, 227, 255)' }, 200); }
@@ -105,7 +111,8 @@ $(document).ready(function () {
     $(`.${prefix}Content`).fadeOut(200);
     $(`#${prefix}Img`).animate({ opacity: '1.0' }, 300);
   }
-  // portfolio description hover
+
+  // portfolio project hover
   $('.imgCard').hover(
     function () {
       switch (this.id) {
