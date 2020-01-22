@@ -4,22 +4,28 @@ $(document).ready(function () {
   $('.photoContent').hide();
 
   // navbar onclick purple to white
-  $('nav-link').click(function() {
+  $('.nav-link').click(function() {
+    console.log(this.id);
     switch (this.id) {
-      case 'about':
+      case 'aboutNav':
+        $('.card').animate({ backgroundColor: 'rgb(233, 227, 255)'}, 200);
         $('#about').animate({ backgroundColor: 'rgb(255, 255, 255)' }, 200);
         break;
-      case 'portfolio':
+      case 'portfolioNav':
+        $('.card').animate({ backgroundColor: 'rgb(233, 227, 255)'}, 200);
         $('#portfolio').animate({ backgroundColor: 'rgb(255, 255, 255)' }, 200);
         // $('.imgCard').animate({ backgroundColor: 'rgb(255, 255, 255)' }, 200)
         break;
-      case 'music':
+      case 'musicNav':
+        $('.card').animate({ backgroundColor: 'rgb(233, 227, 255)'}, 200);
         $('#music').animate({ backgroundColor: 'rgb(255, 255, 255)' }, 200);
         break;
-      case 'photography':
+      case 'photographyNav':
+        $('.card').animate({ backgroundColor: 'rgb(233, 227, 255)'}, 200);
         $('#photography').animate({ backgroundColor: 'rgb(255, 255, 255)' }, 200);
         break;
-      case 'contact':
+      case 'contactNav':
+        $('.card').animate({ backgroundColor: 'rgb(233, 227, 255)'}, 200);
         $('#contact').animate({ backgroundColor: 'rgb(255, 255, 255)' }, 200);
         break;
       default:
@@ -72,7 +78,7 @@ $(document).ready(function () {
           $(this).animate({ backgroundColor: 'rgb(233, 227, 255)'}, 200);
           break;
         default:
-          console.log('fluid filled catheter is flasely low');
+          console.log('error');
           break;
       }
     },
