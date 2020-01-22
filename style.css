@@ -12,6 +12,7 @@ body {
 #scrollbox {
   max-height: 32rem;
   overflow-y: auto;
+  scroll-behavior:smooth
 }
 
 #navbar {
