@@ -63,15 +63,15 @@ $(document).ready(function () {
       switch (this.id) {
         case 'plannerCard':
           $('.plannerContent').fadeIn(300);
-          $('#plannerImg').animate({ opacity: '0.1' }, 500);
+          $('#plannerImg').animate({ opacity: '0.1' }, 300);
           break;
         case 'passwordCard':
           $('.passwordContent').fadeIn(300);
-          $('#passwordImg').animate({ opacity: '0.1' }, 500);
+          $('#passwordImg').animate({ opacity: '0.1' }, 300);
           break;
         case 'homebuyerCard':
           $('.homebuyerContent').fadeIn(300);
-          $('#homebuyerImg').animate({ opacity: '0.1' }, 500);
+          $('#homebuyerImg').animate({ opacity: '0.1' }, 300);
           break;
         default:
           console.log('error');
@@ -82,15 +82,15 @@ $(document).ready(function () {
       switch (this.id) {
         case 'plannerCard':
           $('.plannerContent').fadeOut(200);
-          $('#plannerImg').animate({ opacity: '1.0' }, 500);
+          $('#plannerImg').animate({ opacity: '1.0' }, 200);
           break;
         case 'passwordCard':
           $('.passwordContent').fadeOut(200);
-          $('#passwordImg').animate({ opacity: '1.0' }, 500);
+          $('#passwordImg').animate({ opacity: '1.0' }, 200);
           break;
         case 'homebuyerCard':
           $('.homebuyerContent').fadeOut(200);
-          $('#homebuyerImg').animate({ opacity: '1.0' }, 500);
+          $('#homebuyerImg').animate({ opacity: '1.0' }, 200);
           break;
         default:
           console.log('error');
