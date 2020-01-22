@@ -3,147 +3,137 @@ $(document).ready(function () {
   $('.projectContent').hide();
   $('.photoContent').hide();
 
-  $('#maxName').click(function() {
-    $('.nav-link').removeClass('bold',);
+  $('#maxName').click(function () {
+    $('.nav-link').removeClass('bold');
     $(this).addClass('bold');
   })
 
   // navbar onclick purple to white
-  $('.nav-link').click(function() {
-    // console.log(this.id);
+  $('.nav-link').click(function () {
     switch (this.id) {
       case 'aboutNav':
-        $('.nav-link').removeClass('bold',);
-        $('#maxName').removeClass('bold',);
-        $('.card').animate({ backgroundColor: 'rgb(233, 227, 255)'}, 200);
-        $('#about').animate({ backgroundColor: 'rgb(255, 255, 255)' }, 200);
-        $(this).addClass('bold');
+        moveBold(this);
+        animateToLilac('.card');
+        animateToWhite('#about');
         break;
       case 'portfolioNav':
-        $('.nav-link').removeClass('bold');
-        $('#maxName').removeClass('bold',);
-        $('.card').animate({ backgroundColor: 'rgb(233, 227, 255)'}, 200);
-        $('#portfolio').animate({ backgroundColor: 'rgb(255, 255, 255)' }, 200);
-        $(this).addClass('bold');
+        moveBold(this);
+        animateToLilac('.card');        
+        animateToWhite('#portfolio');
         break;
       case 'musicNav':
-        $('.nav-link').removeClass('bold');
-        $('#maxName').removeClass('bold',);
-        $('.card').animate({ backgroundColor: 'rgb(233, 227, 255)'}, 200);
-        $('#music').animate({ backgroundColor: 'rgb(255, 255, 255)' }, 200);
-        $(this).addClass('bold');
+        moveBold(this);
+        animateToLilac('.card');
+        animateToWhite('#music');
         break;
       case 'photographyNav':
-        $('.nav-link').removeClass('bold');
-        $('#maxName').removeClass('bold',);
-        $('.card').animate({ backgroundColor: 'rgb(233, 227, 255)'}, 200);
-        $('#photography').animate({ backgroundColor: 'rgb(255, 255, 255)' }, 200);
-        $(this).addClass('bold');
+        moveBold(this);
+        animateToLilac('.card');
+        animateToWhite('#photography');
         break;
       case 'contactNav':
-        $('.nav-link').removeClass('bold');
-        $('#maxName').removeClass('bold',);
-        $('.card').animate({ backgroundColor: 'rgb(233, 227, 255)'}, 200);
-        $('#contact').animate({ backgroundColor: 'rgb(255, 255, 255)' }, 200);
-        $(this).addClass('bold');
+        moveBold(this);
+        animateToLilac('.card');
+        animateToWhite('#contact');
         break;
       default:
-        // console.log('error');
         break;
     }
   });
 
-// purple to white hover
+  // purple to white hover
   $('.card').hover(
     function () {
-      // console.log(this.id);
       switch (this.id) {
         case 'about':
-          $(this).animate({ backgroundColor: 'rgb(255, 255, 255)' }, 200);
+          animateToWhite(this);
           break;
         case 'portfolio':
-          $(this).animate({ backgroundColor: 'rgb(255, 255, 255)' }, 200);
-          // $('.imgCard').animate({ backgroundColor: 'rgb(255, 255, 255)' }, 200)
+          animateToWhite(this);
           break;
         case 'music':
-          $(this).animate({ backgroundColor: 'rgb(255, 255, 255)' }, 200);
+          animateToWhite(this);
           break;
         case 'photography':
-          $(this).animate({ backgroundColor: 'rgb(255, 255, 255)' }, 200);
+          animateToWhite(this);
           break;
         case 'contact':
-          $(this).animate({ backgroundColor: 'rgb(255, 255, 255)' }, 200);
+          animateToWhite(this);
           break;
         default:
-          // console.log('error');
           break;
       }
     },
     function () {
       switch (this.id) {
         case 'about':
-          $(this).animate({ backgroundColor: 'rgb(233, 227, 255)'}, 200);
+          animateToLilac(this);
           break;
         case 'portfolio':
-          $(this).animate({ backgroundColor: 'rgb(233, 227, 255)'}, 200);
+          animateToLilac(this);
           break;
         case 'music':
-          $(this).animate({ backgroundColor: 'rgb(233, 227, 255)'}, 200);
+          animateToLilac(this);
           break;
         case 'photography':
-          $(this).animate({ backgroundColor: 'rgb(233, 227, 255)'}, 200);
+          animateToLilac(this);
           break;
         case 'contact':
-          $(this).animate({ backgroundColor: 'rgb(233, 227, 255)'}, 200);
+          animateToLilac(this);
           break;
         default:
-          console.log('error');
           break;
       }
     },
   );
 
-  // const colorFadeIn = element => { $(element).animate(backgroundColor: rgb(244, 241, 255)); }
+  const moveBold = (element) => {
+    $('.nav-link').removeClass('bold');
+    $('#maxName').removeClass('bold');
+    $(element).addClass('bold');
+  }
+  const animateToWhite = element => { $(element).animate({ backgroundColor: 'rgb(255, 255, 255)' }, 200); }
 
-  // const colorFadeOut = element => { $(element).animate(backgroundColor: rgb(244, 241, 255)); }
+  const animateToLilac = element => { $(element).animate({ backgroundColor: 'rgb(233, 227, 255)' }, 200); }
 
-// portfolio description hover
+  const hoverOn = prefix => {
+    $(`.${prefix}Content`).fadeIn(300);
+    $(`#${prefix}Img`).animate({ opacity: '0.1' }, 300);
+  }
+
+  const hoverOff = prefix => {
+    $(`.${prefix}Content`).fadeOut(200);
+    $(`#${prefix}Img`).animate({ opacity: '1.0' }, 300);
+  }
+  // portfolio description hover
   $('.imgCard').hover(
     function () {
       switch (this.id) {
         case 'plannerCard':
-          $('.plannerContent').fadeIn(300);
-          $('#plannerImg').animate({ opacity: '0.1' }, 300);
+          hoverOn('planner');
           break;
         case 'passwordCard':
-          $('.passwordContent').fadeIn(300);
-          $('#passwordImg').animate({ opacity: '0.1' }, 300);
+          hoverOn('password');
           break;
         case 'homebuyerCard':
-          $('.homebuyerContent').fadeIn(300);
-          $('#homebuyerImg').animate({ opacity: '0.1' }, 300);
+          hoverOn('homebuyer');
           break;
         default:
-          // console.log('error');
           break;
       }
     },
     function () {
       switch (this.id) {
         case 'plannerCard':
-          $('.plannerContent').fadeOut(200);
-          $('#plannerImg').animate({ opacity: '1.0' }, 200);
+          hoverOff('planner');
           break;
         case 'passwordCard':
-          $('.passwordContent').fadeOut(200);
-          $('#passwordImg').animate({ opacity: '1.0' }, 200);
+          hoverOff('password');
           break;
         case 'homebuyerCard':
-          $('.homebuyerContent').fadeOut(200);
-          $('#homebuyerImg').animate({ opacity: '1.0' }, 200);
+          hoverOff('homebuyer');
           break;
         default:
-          // console.log('error');
           break;
       }
     }
@@ -152,13 +142,11 @@ $(document).ready(function () {
   // photography hover
   $('#photography').hover(
     function () {
-      // console.log(this.id);
       switch (this.id) {
         case 'photography':
           $('.photoContent').fadeIn(300);
           break;
         default:
-          // console.log('error');
           break;
       }
     },
@@ -168,7 +156,6 @@ $(document).ready(function () {
           $('.photoContent').fadeOut(200);
           break;
         default:
-          // console.log('error');
           break;
       }
     }

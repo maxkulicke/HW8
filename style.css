@@ -40,7 +40,7 @@ font-weight: bold;
 }
 
 .nav-link {
-/* font-weight: bold; */
+
 }
 
 .container {
@@ -52,17 +52,10 @@ font-weight: bold;
   background-color: rgb(233, 227, 255);
 }
 
-
-/* .rounded {
-  border-radius: .5rem!important
-} */
-
-
 #maxpic {
   margin-bottom: 1rem;
   margin-right: 1rem;
 }
 
 .btn {
-  /* margin: 1rem; */
 }
