@@ -3,7 +3,32 @@ $(document).ready(function () {
   $('.projectContent').hide();
   $('.photoContent').hide();
 
+  // navbar onclick purple to white
+  $('nav-link').click(function() {
+    switch (this.id) {
+      case 'about':
+        $('#about').animate({ backgroundColor: 'rgb(255, 255, 255)' }, 200);
+        break;
+      case 'portfolio':
+        $('#portfolio').animate({ backgroundColor: 'rgb(255, 255, 255)' }, 200);
+        // $('.imgCard').animate({ backgroundColor: 'rgb(255, 255, 255)' }, 200)
+        break;
+      case 'music':
+        $('#music').animate({ backgroundColor: 'rgb(255, 255, 255)' }, 200);
+        break;
+      case 'photography':
+        $('#photography').animate({ backgroundColor: 'rgb(255, 255, 255)' }, 200);
+        break;
+      case 'contact':
+        $('#contact').animate({ backgroundColor: 'rgb(255, 255, 255)' }, 200);
+        break;
+      default:
+        // console.log('error');
+        break;
+    }
+  });
 
+// purple to white hover
   $('.card').hover(
     function () {
       // console.log(this.id);
@@ -13,6 +38,7 @@ $(document).ready(function () {
           break;
         case 'portfolio':
           $(this).animate({ backgroundColor: 'rgb(255, 255, 255)' }, 200);
+          // $('.imgCard').animate({ backgroundColor: 'rgb(255, 255, 255)' }, 200)
           break;
         case 'music':
           $(this).animate({ backgroundColor: 'rgb(255, 255, 255)' }, 200);
@@ -56,7 +82,7 @@ $(document).ready(function () {
 
   // const colorFadeOut = element => { $(element).animate(backgroundColor: rgb(244, 241, 255)); }
 
-
+// portfolio description hover
   $('.imgCard').hover(
     function () {
       switch (this.id) {
@@ -98,6 +124,7 @@ $(document).ready(function () {
     }
   );
 
+  // photography hover
   $('#photography').hover(
     function () {
       // console.log(this.id);
@@ -112,7 +139,7 @@ $(document).ready(function () {
     },
     function () {
       switch (this.id) {
-        case 'photoCard':
+        case 'photography':
           $('.photoContent').fadeOut(200);
           break;
         default:
@@ -122,6 +149,4 @@ $(document).ready(function () {
     }
   );
 
-  //   const greeting = `My name is ${arya.first}!
-  // I am loyal to ${arya.allegiance}.`;
 })
