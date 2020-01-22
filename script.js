@@ -4,50 +4,49 @@ $(document).ready(function () {
   $('.photoContent').hide();
 
 
-  $('.container').hover(
+  $('.card').hover(
     function () {
-      // console.log(this);
       // console.log(this.id);
       switch (this.id) {
         case 'about':
-          $(this).animate({ backgroundColor: 'rgb(66, 19, 236)' }, 1000);
+          $(this).animate({ backgroundColor: 'rgb(255, 255, 255)' }, 200);
           break;
         case 'portfolio':
-          $(this).animate({ backgroundColor: 'rgb(66, 19, 236)' }, 1000);
+          $(this).animate({ backgroundColor: 'rgb(255, 255, 255)' }, 200);
           break;
         case 'music':
-          $(this).animate({ backgroundColor: 'rgb(66, 19, 236)' }, 1000);
+          $(this).animate({ backgroundColor: 'rgb(255, 255, 255)' }, 200);
           break;
         case 'photography':
-          $(this).animate({ backgroundColor: 'rgb(66, 19, 236)' }, 1000);
+          $(this).animate({ backgroundColor: 'rgb(255, 255, 255)' }, 200);
           break;
         case 'contact':
-          $(this).animate({ backgroundColor: 'rgb(66, 19, 236)' }, 1000);
+          $(this).animate({ backgroundColor: 'rgb(255, 255, 255)' }, 200);
           break;
         default:
-          console.log('error');
+          // console.log('error');
           break;
       }
     },
     function () {
       switch (this.id) {
         case 'about':
-          $(this).animate({ backgroundColor: 'rgba(255, 255, 255, 0.5)' });
+          $(this).animate({ backgroundColor: 'rgb(233, 227, 255)'}, 200);
           break;
         case 'portfolio':
-          $(this).animate({ backgroundColor: 'rgba(255, 255, 255, 0.5)' });
+          $(this).animate({ backgroundColor: 'rgb(233, 227, 255)'}, 200);
           break;
         case 'music':
-          $(this).animate({ backgroundColor: 'rgba(255, 255, 255, 0.5)' });
+          $(this).animate({ backgroundColor: 'rgb(233, 227, 255)'}, 200);
           break;
         case 'photography':
-          $(this).animate({ backgroundColor: 'rgba(255, 255, 255, 0.5)' });
+          $(this).animate({ backgroundColor: 'rgb(233, 227, 255)'}, 200);
           break;
         case 'contact':
-          $(this).animate({ backgroundColor: 'rgba(255, 255, 255, 0.5)' });
+          $(this).animate({ backgroundColor: 'rgb(233, 227, 255)'}, 200);
           break;
         default:
-          console.log('error');
+          console.log('fluid filled catheter is flasely low');
           break;
       }
     },
@@ -74,7 +73,7 @@ $(document).ready(function () {
           $('#homebuyerImg').animate({ opacity: '0.1' }, 300);
           break;
         default:
-          console.log('error');
+          // console.log('error');
           break;
       }
     },
@@ -93,21 +92,21 @@ $(document).ready(function () {
           $('#homebuyerImg').animate({ opacity: '1.0' }, 200);
           break;
         default:
-          console.log('error');
+          // console.log('error');
           break;
       }
     }
   );
 
-  $('#photoCard').hover(
+  $('#photography').hover(
     function () {
       // console.log(this.id);
       switch (this.id) {
-        case 'photoCard':
+        case 'photography':
           $('.photoContent').fadeIn(300);
           break;
         default:
-          console.log('error');
+          // console.log('error');
           break;
       }
     },
@@ -117,7 +116,7 @@ $(document).ready(function () {
           $('.photoContent').fadeOut(200);
           break;
         default:
-          console.log('error');
+          // console.log('error');
           break;
       }
     }
