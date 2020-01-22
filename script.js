@@ -76,7 +76,7 @@ $(document).ready(function () {
       }
     },
   );
-  
+
   // portfolio project hover
   $('.imgCard').hover(
     function () {
@@ -161,7 +161,7 @@ $(document).ready(function () {
   const cardHoverOff= (element) => {
     animateToLilac(element);
     clearBold();
-    $('#maxName').addClass('bold');
+    // $('#maxName').addClass('bold'); // not sure
   }
 
   const projectHoverOn = prefix => {
