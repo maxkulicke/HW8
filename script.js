@@ -31,6 +31,11 @@ $(document).ready(function () {
     }
   });
 
+  $('#email').click(function () {
+    event.preventDefault();
+    mailTo(this.text);
+  })
+
   // purple to white hover
   $('.card').hover(
     function () {
@@ -132,6 +137,8 @@ $(document).ready(function () {
       }
     }
   );
+
+  const mailTo = (address) => { window.location.href = 'mailto:' + address; }
 
   const clearBold = () => {
     $('.nav-link').removeClass('bold');

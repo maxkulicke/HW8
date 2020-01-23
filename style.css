@@ -35,6 +35,10 @@ body {
   color: white;
 }
 
+#email {
+  color: black;
+}
+
 .bold {
 font-weight: bold;
 }
