@@ -143,9 +143,9 @@ $(document).ready(function () {
     $(element).addClass('bold');
   }
 
-  const animateToWhite = element => { $(element).animate({ backgroundColor: 'rgb(255, 255, 255)' }, 200); }
+  const animateToWhite = element => { $(element).animate({ backgroundColor: 'rgb(255, 255, 255)' }, 400); }
 
-  const animateToLilac = element => { $(element).animate({ backgroundColor: 'rgb(233, 227, 255)' }, 200); }
+  const animateToLilac = element => { $(element).animate({ backgroundColor: 'rgb(233, 227, 255)' }, 400); }
 
   const navLinkOnClick = (element, id) => {
     moveBold(element);
