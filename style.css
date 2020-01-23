@@ -19,6 +19,11 @@ body {
   margin-bottom: 3rem;
 }
 
+#linkedInbtn {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
 .imgCard {
   /* height: 600px;
   width: 100vw; */
@@ -47,9 +52,9 @@ font-weight: bold;
 
 }
 
-/* .link-btn {
-  margin-bottom: 0rem;
-} */
+.btn {
+margin: 1 rem;
+}
 
 .container {
   background-color: rgba(255, 255, 255, 0.4);
