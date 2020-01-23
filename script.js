@@ -31,6 +31,15 @@ $(document).ready(function () {
     }
   });
 
+  $('#email').hover(
+    function () {
+      $('#email').addClass('bold');
+    },
+    function () {
+      $('#email').removeClass('bold');
+    },
+  );
+
   $('#email').click(function () {
     event.preventDefault();
     mailTo(this.text);

@@ -44,15 +44,20 @@ body {
 
 #email {
   color: black;
+  font-size: 15pt;
+}
+
+#contactCard {
+  align-content: center;
 }
 
 .bold {
 font-weight: bold;
 }
 
-.nav-link {
+/* .nav-link {
 
-}
+} */
 
 .btn {
 margin: 1 rem;
@@ -70,7 +75,4 @@ margin: 1 rem;
 #maxpic {
   /* margin-bottom: 1rem; */
   margin-right: 1rem;
-}
-
-.btn {
 }
