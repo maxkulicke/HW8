@@ -177,7 +177,6 @@ $(document).ready(function () {
   const cardHoverOff= (element) => {
     animateToLilac(element);
     clearBold();
-    // $('#maxName').addClass('bold'); // not sure
   }
 
   const projectHoverOn = prefix => {
