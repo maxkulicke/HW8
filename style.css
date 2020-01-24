@@ -3,10 +3,10 @@ html {
 }
 
 body {
-  /* background-image: url("images/pinksky.jpg"); */
-  /* background-size: cover;
+  background-image: url("images/pinksky.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed; */
+  background-attachment: fixed;
 }
 
 #scrollbox {

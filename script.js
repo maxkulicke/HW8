@@ -185,7 +185,7 @@ $(document).ready(function () {
   }
 
   const projectHoverOff = prefix => {
-    $(`.${prefix}Content`).fadeOut(200);
+    $(`.${prefix}Content`).fadeOut(300);
     $(`#${prefix}Img`).animate({ opacity: '1.0' }, 300);
   }
 
