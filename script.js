@@ -95,6 +95,12 @@ $(document).ready(function () {
   $('.imgCard').hover(
     function () {
       switch (this.id) {
+        case 'cmsCard':
+          projectHoverOn('cms');
+          break;
+        case 'bThereCard':
+          projectHoverOn('bThere');
+          break;
         case 'plannerCard':
           projectHoverOn('planner');
           break;
@@ -110,6 +116,12 @@ $(document).ready(function () {
     },
     function () {
       switch (this.id) {
+        case 'cmsCard':
+          projectHoverOff('cms');
+          break;
+        case 'bThereCard':
+          projectHoverOff('bThere');
+          break;
         case 'plannerCard':
           projectHoverOff('planner');
           break;
